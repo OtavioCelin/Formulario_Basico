@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário - Básico</title>
+</head>
+<body>
+    <form action="">
+        <div class="container-main">
+            <h1>Formulário de Identificação</h1>
+            <div class="campo-1">
+                <p>Pessoa Física</p>
+                <input type="text" name="name" id="nome" placeholder="Nome" required>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="text" name="endereco" id="endereco" placeholder="Endereço">
+                <select id="estadoCivil" name="estadoCivil">
+                    <option value="Solteiro">Solteiro</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Viuvo">Viúvo</option>
+                    <option value="Divorciado(a)">Divorciado(a)</option>
+                </select>
+            </div>
+            <div class="campo-2">
+                <input type="radio" name="sexo" id="masculino" >
+                <label for="masculino">Maculino</label>
+
+                <input type="radio" name="sexo" id="feminino" >
+                <label for="feminino">Feminino</label>
+
+                <input type="radio" name="sexo" id="outros" >
+                <label for="outros">Outros</label>
+            </div>
+            <div class="campo-3">
+                <p>Login</p>
+                <input type="text" name="user" id="usuario" placeholder="Usuário" required>
+                <input type="password" name="senha" id="senha" placeholder="Senha" required>
+            </div>
+            <div class="campo-4">
+                <p>Observações</p>
+                <textarea name="obs" id="observacoes" placeholder="Observações"></textarea>
+            </div>
+            <div class="botao">
+                <input type="submit" value="Enviar" id="button">
+            </div>
+        </div>
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
